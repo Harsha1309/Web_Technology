@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task3</title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Task 3</title>
     <style>
-        .class_use{
-            background-color: cadetblue;
+        .myclass{
+            background-color: rgb(0, 255, 242);
         }
     </style>
 </head>
 <body>
-    <h1>Introduction to Javascript</h1>
-    <button onclick="change();">Click to change</button>
-    <script>
-        change=function(){
-            document.body.className="class_use"
+    <h1>
+        Javascript
+    </h1>
+    <button onclick="Changethepage();">Click!</button>
+    <script type = "text/javascript">
+        Changethepage = function(){
+            alert("Body Has class="+document.body.className);
+            document.body.className="myclass";
+            alert("Body has class="+document.body.className);
+            document.body.innerHTML="<h1> Animay is learning Javascript today !! </h1>";
         }
     </script>
 </body>
