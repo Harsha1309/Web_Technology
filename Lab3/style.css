@@ -1,0 +1,62 @@
+/* Home */
+
+*{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    background-color: lightgray;
+}
+.navbar{
+    background-color: #7b2aa5;;
+    color: white;
+    height: 35px;
+    /* position: fixed; */
+    width: 100%;
+}
+ul{
+    padding-top:7px;
+}
+ul li{
+    display:inline;
+    /* padding:4px; */
+    align-items: center;
+    padding: 15px;
+
+}
+ul li a{
+    color:whitesmoke;
+    /* padding-top: 200px; */
+}
+.nav{
+    height: 20%;
+}
+.left{
+    float: left;
+    width: 80%;
+}
+.right{
+    float: left;
+    width:20%;
+}
+img{
+    /* margin: ; */
+    /* float: right; */
+    height: 400px;
+    border: 10px solid thistle;
+}
+footer{
+    clear: both;
+    position: relative;
+    text-align: center;
+    bottom: -34px;
+    height:60%;
+    width: 100%;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+
+
