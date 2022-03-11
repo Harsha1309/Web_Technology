@@ -1,0 +1,16 @@
+<html>
+   <body>
+        <button onclick="change();">Increment</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sapiente.</p>
+      <script>
+         var a = 1;
+         change = function(){
+            var text = document.querySelector('p');
+            text.style.fontSize = a+30;
+            text.innerHTML = "</br>Number of times button is pressed " + a;
+            text.style.fontSize = a+30;
+            a++;
+         }
+      </script>
+   </body>
+</html>
