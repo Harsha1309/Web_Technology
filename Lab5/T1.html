@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        @keyframes spin{
+            0%{
+                transform: rotateX(0deg);
+
+            }
+            100%{ 
+                transform: rotateX(360deg);
+            }
+        }
+        #head{
+            
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 id="head" onclick="f1()">Hello</h2>
+       <p>Enter the word: <input type="text" id="input" placeholder="Type Something..."/></p>
+        <button type="button" id="btn" onclick="f1()">Change</button> 
+
+
+
+    
+</body>
+<script type="text/javascript">
+     
+    function f1(){
+        input = document.getElementById('input').value;
+        document.getElementById("head").innerHTML=input; 
+        document.getElementById("head").style.animationName="spin";
+    }
+
+
+</script>
+</html>
