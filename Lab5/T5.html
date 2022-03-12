@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>T5</title>
+    <style>
+        body{
+            font-size: 30px;
+        }
+        button{
+            width: 200px;
+            height: 30px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Enter the first value:
+    <input type="text" id="firstip" placeholder="First value">
+    <p>Enter the second value: 
+    <input type="text" id="secondip" placeholder="Second value"></p>
+    <label for="+"></label>
+    <button onclick="sum()" id="add">Sum</button>
+    <label for="-"></label>
+    <button onclick="subtract()">Subtract</button>
+    <label for="*"></label>
+    <button onclick="multiply()">Multiply</button>
+    <label for="/"></label>
+    <button onclick="divide()">Divide</button>
+    <main id="result">
+    </main>
+    <script>
+        function sum() {
+            num1 = document.getElementById("firstip").value;
+            num2 = document.getElementById("secondip").value;
+            a = Number.parseInt(num1);
+            b = Number.parseInt(num2);
+            document.getElementById("result").innerHTML = a+b;
+        }
+        function subtract() {
+            num1 = document.getElementById("firstip").value;
+            num2 = document.getElementById("secondip").value;
+            document.getElementById("result").innerHTML = num1 - num2;
+        }
+        function multiply() {
+            num1 = document.getElementById("firstip").value;
+            num2 = document.getElementById("secondip").value;
+            document.getElementById("result").innerHTML = num1 * num2;
+        }
+        function divide() {
+            num1 = document.getElementById("firstip").value;
+            num2 = document.getElementById("secondip").value;
+            document.getElementById("result").innerHTML = num1 / num2;
+        }
+
+
+    </script>
+</body>
+
+</html>
