@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>T4</title>
+    <style>
+        button{
+            width: 120px;
+            height: 50px;
+            font-size: 30px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="sum()">Click</button>
+    <table id="tab"></table>
+
+    <script>
+        let n1 = 0, n2 = 1, nextTerm;
+        sum = function () {
+            t = document.querySelector('#tab');
+            trow = document.createElement('tr');
+            td = document.createElement('td');
+            contents = document.createTextNode(n1);
+            td.appendChild(contents);
+            trow.appendChild(td);
+            t.appendChild(trow);
+            nextTerm = n1 + n2;
+            n1 = n2;
+            n2 = nextTerm;
+        }
+
+    </script>
+</body>
+
+</html>
